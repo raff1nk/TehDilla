@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website for My Best Friend</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Login Section -->
+    <div class="login-container active" id="login-section">
+      <div class="box">
+        <h2>Halo teh dilla</h2>
+        <input type="text" id="username" placeholder="Username" />
+        <input type="password" id="password" placeholder="Password" />
+        <button onclick="login()">Login</button>
+        <p id="error-message" style="color: red"></p>
+      </div>
+    </div>
+
+    <!-- Main Content Section -->
+    <div class="main-container" id="main-content" style="display: none">
+      <!-- Backsound Music -->
+      <audio id="backsound" autoplay loop>
+        <source id="audio-source" src="Disenchanted.mp3" type="audio/mp3" />
+        Your browser does not support the audio element.
+      </audio>
+
+      <!-- Music Title and Skip Button -->
+      <div class="music-title" id="music-title">
+        Disenchanted
+        <button id="skip-button" onclick="skipMusic()">Skip Music</button>
+      </div>
+
+      <div class="container">
+        <!-- Section 1 -->
+        <div class="section active" id="section1">
+          <div class="box">
+            <h2>Hai, Teh dilla 🌸✨</h2>
+            <p>
+              First impression ku ke teteh mungkin saat awal awal skema atau saat di syiar, tapi 100% persen aku kenal teteh dari skema, mungkin selewat di luar, aku kira teteh orangnya kayak lead banget, pendiem banget, keep it kalm banget
+              orangnya
+            </p>
+          </div>
+          <div class="buttons">
+            <button onclick="navigate('next', 1)">Selanjutnya</button>
+          </div>
+        </div>
+
+        <!-- Section 2 -->
+        <div class="section" id="section2">
+          <div class="box">
+            <h2>People</h2>
+            <p>
+              Setelah berjalannya waktu, aku rasa Teh Dilla tuh orangnya orangnya bisa semuanya khususnya dunia medsos, dan orangnya gak senolep itu, orangnya baik, sangat membantu bahkan ketika ketuanya ngilang ke bali. dann ketika malem
+              ini mau bikin ini juga bikin terkejut bahkan pengen lompat dari kursi ini, gila dirimu suka kornnn, MCR, Slipknot, dkkk
+            </p>
+          </div>
+          <div class="buttons">
+            <button onclick="navigate('prev', 2)">Sebelumnya</button>
+            <button onclick="navigate('next', 2)">Selanjutnya</button>
+          </div>
+        </div>
+
+        <!-- Section 3 -->
+        <div class="section" id="section3">
+          <div class="box">
+            <h2>Kisah Menarik</h2>
+            <p>
+              hmmm kalau bagian ini aku agak gak terlalu bisa milih, karena memang ada 1 momen yang bisa dengan benar di highligt, yupp benerr waktnya ketua skema 2023 2024 kabur ke bali nyari bule, yaa kali pertama dapat tugas yang hah
+              gila dadakan banget, gede banget dan andai anak sekecil itu berkelahi dengan keadaan, tapi itu aku bisa lewatin karena ada teteh, yang saat itu jauh lebih berguna ketimbang ketuanya sendiri, makasih teh dengan itu aku belajar
+              banyak hal dan terbantu banyak hal oleh karena teteh.
+            </p>
+          </div>
+          <div class="buttons">
+            <button onclick="navigate('prev', 3)">Sebelumnya</button>
+            <button onclick="navigate('next', 3)">Selanjutnya</button>
+          </div>
+        </div>
+
+        <!-- Section 4 -->
+        <div class="section" id="section4">
+          <div class="box">
+            <h2>Kritik dan saran</h2>
+            <p>
+              Kritik dan saran dari aku mah dikit kokkk, kritik dari aku paling cuma. aku teh yakin teteh itu bisa banyak hal, bisa mengerjakan halk hal yang besar, gak harus orang lain yang ngerjain, jangan terlalu mengikuti orang lain.
+              Orang lain boleh jadi ketua teteh, tapi teteh harus juga jadi leader bagi diri sendiri, jangan terlalu terikat kepada bayangan orang lain
+            </p>
+          </div>
+          <div class="buttons">
+            <button onclick="navigate('prev', 4)">Sebelumnya</button>
+            <button onclick="navigate('next', 4)">Selanjutnya</button>
+          </div>
+        </div>
+
+        <!-- Section 5 -->
+        <div class="section" id="section5">
+          <div class="box">
+            <h2>The Point ✉️✉️</h2>
+            <p>Aku pengen ucapin terima kasih kepada teteh karena berkat teteh, skema gak hancur pas ketuanya kabur kemaren, dan juga aku berterima kasih karena telah ada di skema hingga saat ini..</p>
+          </div>
+          <div class="buttons">
+            <button onclick="navigate('prev', 5)">Sebelumnya</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
